@@ -1,0 +1,38 @@
+
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>AUREN AI v2.0 GPT</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="hero">
+    <h1>AUREN AI GPT</h1>
+    <p>Kendi zekânı yarat.</p>
+    <button id="start-btn">Başla</button>
+  </header>
+  <main id="app" class="hidden">
+    <section class="setup">
+      <h2>Kendi AI’ni şekillendir</h2>
+      <label>Karakter ismi: <input type="text" id="ai-name" value="AUREN"/></label>
+      <label>Ses tonu: 
+        <select id="voice">
+          <option>Resmi</option>
+          <option>Arkadaşça</option>
+          <option>Motivasyonel</option>
+        </select>
+      </label>
+      <button id="create-btn">Oluştur</button>
+    </section>
+    <section class="chat hidden" id="chat-section">
+      <h2>AI ile Konuş</h2>
+      <div id="messages"></div>
+      <input type="text" id="user-input" placeholder="Bir şey yaz..."/>
+      <button id="send-btn">Gönder</button>
+    </section>
+  </main>
+<script src="app.js"></script>
+</body>
+</html>
